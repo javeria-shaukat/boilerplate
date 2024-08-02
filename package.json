@@ -2,9 +2,11 @@
     "private": true,
     "type": "module",
     "scripts": {
+        "start": "vite",
         "dev": "vite",
         "build": "vite build",
-         "test": "php artisan test"
+        "serve": "vite preview",
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "devDependencies": {
         "axios": "^1.6.4",
