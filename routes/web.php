@@ -9,6 +9,7 @@ Route::get('/', function () {
 
 Route::get('/test', function () {
     $text=new ExampleClass();
+    
     dd($text->hello()); 
   
 });
