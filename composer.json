@@ -2,7 +2,7 @@
     "repositories": [
         {
             "type": "path",
-            "url": "./vendor/mypackage/testpackage"
+            "url": "vendor/mypackage/testpackage"
         }
     ],
     "name": "laravelmmpackage/testpackage",
@@ -17,7 +17,7 @@
         "php": "^8.2",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9",
-        "mypackage/testpackage": "dev-main"
+        "mypackage/testpackage": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
