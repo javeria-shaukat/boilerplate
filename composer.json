@@ -1,5 +1,5 @@
 {
-    "name": "mypackage/testpackage",
+    "name": "laravelpackage/testpackage",
     "type": "project",
     "description": "The skeleton application for the Laravel framework.",
     "keywords": [
