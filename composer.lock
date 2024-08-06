@@ -1918,24 +1918,24 @@
             "time": "2024-06-28T09:40:51+00:00"
         },
         {
-            "name": "mypackage/testpackage",
+            "name": "boilerplatepackage/testpackage",
             "version": "dev-main",
             "dist": {
                 "type": "path",
-                "url": "vendor/mypackage/testpackage",
+                "url": "packages/boilerplatepackage/testpackage",
                 "reference": "25b864a210ff6630855cb9d6526d8ed7be27d830"
             },
             "type": "metaoackage",
             "extra": {
                 "laravel": {
                     "providers": [
-                        "mypackage\\testpackage\\PermissionEditorServiceProvider"
+                        "Boilerplatepackage\\Testpackage\\PermissionEditorServiceProvider"
                     ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "mypackage\\testpackage\\": "src"
+                    "Boilerplatepackage\\Testpackage\\": "src"
                 }
             },
             "transport-options": {
@@ -7848,7 +7848,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "mypackage/testpackage": 20
+        "boilerplatepackage/testpackage": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
