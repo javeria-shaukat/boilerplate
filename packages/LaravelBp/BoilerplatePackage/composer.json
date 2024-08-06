@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "LaravelBp\\BoilerplatePackage\\": "src/"
+            "Laravel\\BoilerplatePackage\\": "src/"
         }
     },
     "extra": {

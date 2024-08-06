@@ -27,13 +27,13 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/",
-            "Laravel\\BoilerplatePackage\\": "packages/Laravel/BoilerplatePackage/src/"
+            "LaravelBp\\BoilerplatePackage\\": "packages/LaravelBp/BoilerplatePackage/src/"
         }
     },
     "repositories": [
         {
             "type": "path",
-            "url": "packages/Laravel/BoilerplatePackage"
+            "url": "packages/LaravelBp/BoilerplatePackage"
         }
     ],
     "autoload-dev": {

@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelBp\BoilerplatePackage;
+namespace Laravel\BoilerplatePackage;
 
 use Illuminate\Support\ServiceProvider;
 
