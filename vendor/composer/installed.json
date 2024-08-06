@@ -2206,6 +2206,85 @@
             "install-path": "../league/mime-type-detection"
         },
         {
+            "name": "livewire/livewire",
+            "version": "v3.5.4",
+            "version_normalized": "3.5.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/livewire/livewire.git",
+                "reference": "b158c6386a892efc6c5e4682e682829baac1f933"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/b158c6386a892efc6c5e4682e682829baac1f933",
+                "reference": "b158c6386a892efc6c5e4682e682829baac1f933",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^10.0|^11.0",
+                "illuminate/routing": "^10.0|^11.0",
+                "illuminate/support": "^10.0|^11.0",
+                "illuminate/validation": "^10.0|^11.0",
+                "league/mime-type-detection": "^1.9",
+                "php": "^8.1",
+                "symfony/console": "^6.0|^7.0",
+                "symfony/http-kernel": "^6.2|^7.0"
+            },
+            "require-dev": {
+                "calebporzio/sushi": "^2.1",
+                "laravel/framework": "^10.15.0|^11.0",
+                "laravel/prompts": "^0.1.6",
+                "mockery/mockery": "^1.3.1",
+                "orchestra/testbench": "^8.21.0|^9.0",
+                "orchestra/testbench-dusk": "^8.24|^9.1",
+                "phpunit/phpunit": "^10.4",
+                "psy/psysh": "^0.11.22|^0.12"
+            },
+            "time": "2024-07-15T18:27:32+00:00",
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Livewire\\LivewireServiceProvider"
+                    ],
+                    "aliases": {
+                        "Livewire": "Livewire\\Livewire"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Livewire\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Caleb Porzio",
+                    "email": "calebporzio@gmail.com"
+                }
+            ],
+            "description": "A front-end framework for Laravel.",
+            "support": {
+                "issues": "https://github.com/livewire/livewire/issues",
+                "source": "https://github.com/livewire/livewire/tree/v3.5.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/livewire",
+                    "type": "github"
+                }
+            ],
+            "install-path": "../livewire/livewire"
+        },
+        {
             "name": "mockery/mockery",
             "version": "1.6.12",
             "version_normalized": "1.6.12.0",
@@ -2457,35 +2536,6 @@
                 }
             ],
             "install-path": "../myclabs/deep-copy"
-        },
-        {
-            "name": "mypackage/testpackage",
-            "version": "dev-main",
-            "version_normalized": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "vendor/mypackage/testpackage",
-                "reference": "25b864a210ff6630855cb9d6526d8ed7be27d830"
-            },
-            "type": "metaoackage",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "mypackage\\testpackage\\PermissionEditorServiceProvider"
-                    ]
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "mypackage\\testpackage\\": "src"
-                }
-            },
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            },
-            "install-path": "../mypackage/testpackage"
         },
         {
             "name": "nesbot/carbon",
@@ -3644,6 +3694,90 @@
                 }
             ],
             "install-path": "../phpunit/phpunit"
+        },
+        {
+            "name": "power-components/livewire-powergrid",
+            "version": "v5.10.0",
+            "version_normalized": "5.10.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Power-Components/livewire-powergrid.git",
+                "reference": "ea16460f93a743167093391ef254a2038665746b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Power-Components/livewire-powergrid/zipball/ea16460f93a743167093391ef254a2038665746b",
+                "reference": "ea16460f93a743167093391ef254a2038665746b",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/prompts": "^0.1.15",
+                "livewire/livewire": "^3.4.6",
+                "php": "^8.1"
+            },
+            "conflict": {
+                "laravel/framework": "10.40.0"
+            },
+            "require-dev": {
+                "composer/composer": "^2.7.1",
+                "laradumps/laradumps": "^3.1",
+                "laradumps/laradumps-core": "^2.0",
+                "larastan/larastan": "^2.9.0",
+                "laravel/pint": "^1.14.0",
+                "laravel/scout": "^10.9",
+                "orchestra/testbench": "8.19|^9.0",
+                "pestphp/pest": "^2.34.0"
+            },
+            "suggest": {
+                "openspout/openspout": "Required to export XLS and CSV"
+            },
+            "time": "2024-07-20T20:11:58+00:00",
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "PowerComponents\\LivewirePowerGrid\\Providers\\PowerGridServiceProvider"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "PowerComponents\\LivewirePowerGrid\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luan Freitas",
+                    "email": "luanfreitas10@protonmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "DanSysAnalyst",
+                    "email": "daniel@sysanalyst.eu",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PowerGrid generates Advanced Datatables using Laravel Livewire.",
+            "homepage": "https://github.com/power-components/livewire-powergrid",
+            "support": {
+                "issues": "https://github.com/Power-Components/livewire-powergrid/issues",
+                "source": "https://github.com/Power-Components/livewire-powergrid/tree/v5.10.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/luanfreitasdev",
+                    "type": "github"
+                }
+            ],
+            "install-path": "../power-components/livewire-powergrid"
         },
         {
             "name": "psr/clock",

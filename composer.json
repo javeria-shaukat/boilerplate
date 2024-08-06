@@ -1,11 +1,5 @@
 {
-    "repositories": [
-        {
-            "type": "path",
-            "url": "packages/boilerplatepackage/testpackage"
-        }
-    ],
-    "name": "laravelmmpackage/testpackage",
+    "name": "laravel/boilerplate-package",
     "type": "project",
     "description": "The skeleton application for the Laravel framework.",
     "keywords": [
@@ -17,7 +11,8 @@
         "php": "^8.2",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9",
-        "mypackage/testpackage": "*"
+        "livewire/livewire": "^3.5",
+        "power-components/livewire-powergrid": "^5.10"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -32,9 +27,15 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/",
-            "Boilerplatepackage\\Testpackage\\": "packages/boilerplatepackage/testpackage/src/"
+            "Laravel\\BoilerplatePackage\\": "packages/Laravel/BoilerplatePackage/src/"
         }
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "packages/Laravel/BoilerplatePackage"
+        }
+    ],
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"
