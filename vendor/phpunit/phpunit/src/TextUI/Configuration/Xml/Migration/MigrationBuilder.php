@@ -12,11 +12,9 @@ namespace PHPUnit\TextUI\XmlConfiguration;
 use function version_compare;
 
 /**
- * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
- *
  * @internal This class is not covered by the backward compatibility promise for PHPUnit
  */
-final readonly class MigrationBuilder
+final class MigrationBuilder
 {
     private const AVAILABLE_MIGRATIONS = [
         '8.5' => [
@@ -62,19 +60,6 @@ final readonly class MigrationBuilder
 
         '10.0' => [
             MoveCoverageDirectoriesToSource::class,
-        ],
-
-        '10.5' => [
-            RemoveRegisterMockObjectsFromTestArgumentsRecursivelyAttribute::class,
-        ],
-
-        '11.0' => [
-            ReplaceRestrictDeprecationsWithIgnoreDeprecations::class,
-        ],
-
-        '11.1' => [
-            RemoveCacheResultFileAttribute::class,
-            RemoveCoverageElementCacheDirectoryAttribute::class,
         ],
     ];
 

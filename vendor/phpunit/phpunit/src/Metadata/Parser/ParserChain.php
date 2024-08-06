@@ -12,14 +12,12 @@ namespace PHPUnit\Metadata\Parser;
 use PHPUnit\Metadata\MetadataCollection;
 
 /**
- * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
- *
  * @internal This class is not covered by the backward compatibility promise for PHPUnit
  */
-final readonly class ParserChain implements Parser
+final class ParserChain implements Parser
 {
-    private Parser $attributeReader;
-    private Parser $annotationReader;
+    private readonly Parser $attributeReader;
+    private readonly Parser $annotationReader;
 
     public function __construct(Parser $attributeReader, Parser $annotationReader)
     {

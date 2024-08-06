@@ -47,8 +47,6 @@ use PHPUnit\TextUI\Configuration\Source;
 use PHPUnit\TextUI\Configuration\SourceFilter;
 
 /**
- * @no-named-arguments Parameter names are not covered by the backward compatibility promise for PHPUnit
- *
  * @internal This class is not covered by the backward compatibility promise for PHPUnit
  */
 final class Collector
@@ -356,18 +354,6 @@ final class Collector
             return;
         }
 
-        if ($this->source->ignoreSelfDeprecations() && $event->trigger()->isSelf()) {
-            return;
-        }
-
-        if ($this->source->ignoreDirectDeprecations() && $event->trigger()->isDirect()) {
-            return;
-        }
-
-        if ($this->source->ignoreIndirectDeprecations() && $event->trigger()->isIndirect()) {
-            return;
-        }
-
         if (!$this->source->ignoreSuppressionOfDeprecations() && $event->wasSuppressed()) {
             return;
         }
@@ -401,18 +387,6 @@ final class Collector
         if ($event->ignoredByBaseline()) {
             $this->numberOfIssuesIgnoredByBaseline++;
 
-            return;
-        }
-
-        if ($this->source->ignoreSelfDeprecations() && $event->trigger()->isSelf()) {
-            return;
-        }
-
-        if ($this->source->ignoreDirectDeprecations() && $event->trigger()->isDirect()) {
-            return;
-        }
-
-        if ($this->source->ignoreIndirectDeprecations() && $event->trigger()->isIndirect()) {
             return;
         }
 
