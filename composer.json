@@ -2,7 +2,7 @@
     "repositories": [
         {
             "type": "path",
-            "url": "vendor/mypackage/testpackage"
+            "url": "packages/boilerplatepackage/testpackage"
         }
     ],
     "name": "laravelmmpackage/testpackage",
@@ -31,7 +31,8 @@
         "psr-4": {
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
-            "Database\\Seeders\\": "database/seeders/"
+            "Database\\Seeders\\": "database/seeders/",
+            "Boilerplatepackage\\Testpackage\\": "packages/boilerplatepackage/testpackage/src/"
         }
     },
     "autoload-dev": {

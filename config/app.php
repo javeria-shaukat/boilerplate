@@ -15,6 +15,12 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
 
+    'providers' => [
+        // Other service providers...
+
+        Boilerplatepackage\Testpackage\MyPackageServiceProvider::class,
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment

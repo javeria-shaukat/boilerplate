@@ -1,0 +1,16 @@
+{
+    "name": "boilerplatepackage/testpackage",
+    "description": "this is a simple boilerplate laravel package",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Boilerplatepackage\\Testpackage\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "javeria Shaukat"
+        }
+    ],
+    "require": {}
+}
