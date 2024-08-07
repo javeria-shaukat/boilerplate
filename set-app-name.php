@@ -1,6 +1,5 @@
 <?php
 
-// Include Composer's autoloader
 require __DIR__ . '/vendor/autoload.php';
 
 // Ensure the script is run in the command line
@@ -8,13 +7,12 @@ if (php_sapi_name() !== 'cli') {
     exit('This script can only be run from the command line.');
 }
 
-// Prompt the user for the application name
-echo "Please provide a name for your application: ";
-$appName = trim(fgets(STDIN));
+// Get the project directory name
+$projectName = basename(__DIR__);
 
 // Validate the input
-if (empty($appName)) {
-    exit("Application name cannot be empty.\n");
+if (empty($projectName)) {
+    exit("Project name cannot be empty.\n");
 }
 
 // Path to the .env file
@@ -26,12 +24,12 @@ if (file_exists($envPath)) {
     $envContent = file_get_contents($envPath);
 
     // Update the APP_NAME in the .env file
-    $newEnvContent = preg_replace('/^APP_NAME=.*$/m', 'APP_NAME="' . $appName . '"', $envContent);
+    $newEnvContent = preg_replace('/^APP_NAME=.*$/m', 'APP_NAME="' . $projectName . '"', $envContent);
 
     // Save the updated content back to the .env file
     file_put_contents($envPath, $newEnvContent);
 
-    echo "Application name set to $appName in .env file.\n";
+    echo "Application name set to $projectName in .env file.\n";
 } else {
     echo "Error: .env file not found.\n";
 }
