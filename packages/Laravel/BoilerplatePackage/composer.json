@@ -1,5 +1,5 @@
 {
-    "name": "laravelbp/boilerplate-package",
+    "name": "laravel/boilerplate-package",
     "description": "This is a simple boilerplate package of laravel",
     "type": "library",
     "authors": [
@@ -11,17 +11,18 @@
     "require": {
         "php": "^8.2",
         "livewire/livewire": "^3.5",
-        "power-components/livewire-powergrid": "^5.10"
+        "power-components/livewire-powergrid": "^5.10",
+        "laravel/breeze": "^2.1"
     },
     "autoload": {
         "psr-4": {
-            "LaravelBp\\BoilerplatePackage\\": "src/"
+            "Laravel\\BoilerplatePackage\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "LaravelBp\\BoilerplatePackage\\BoilerPlateServiceProvider"
+                "Laravel\\BoilerplatePackage\\BoilerPlateServiceProvider"
             ]
         }
     },
