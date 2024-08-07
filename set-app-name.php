@@ -24,7 +24,7 @@ if (file_exists($envPath)) {
     $envContent = file_get_contents($envPath);
 
     // Update the APP_NAME in the .env file
-    $newEnvContent = preg_replace('/^APP_NAME=.*$/m', 'APP_NAME="' . $projectName . '"', $envContent);
+    $newEnvContent = preg_replace('/^APP_NAME=.*$/m', 'APP_NAME=' . $projectName . '', $envContent);
 
     // Save the updated content back to the .env file
     file_put_contents($envPath, $newEnvContent);
