@@ -3,7 +3,7 @@
         'name' => 'laravelabcd/boilerplate-package',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'fb9a92b95f39280a676321a1b41e426f7d08d604',
+        'reference' => 'e97a9d6d9a1e4d83efc4e47c4462ae5fbf5cc34c',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -472,7 +472,7 @@
         'laravelabcd/boilerplate-package' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'fb9a92b95f39280a676321a1b41e426f7d08d604',
+            'reference' => 'e97a9d6d9a1e4d83efc4e47c4462ae5fbf5cc34c',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -1078,6 +1078,15 @@
             'install_path' => __DIR__ . '/../sebastian/version',
             'aliases' => array(),
             'dev_requirement' => true,
+        ),
+        'spatie/laravel-permission' => array(
+            'pretty_version' => '6.9.0',
+            'version' => '6.9.0.0',
+            'reference' => 'fe973a58b44380d0e8620107259b7bda22f70408',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../spatie/laravel-permission',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'spatie/once' => array(
             'dev_requirement' => false,
