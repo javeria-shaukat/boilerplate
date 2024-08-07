@@ -3,7 +3,7 @@
         'name' => 'laravelabcd/boilerplate-package',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'e97a9d6d9a1e4d83efc4e47c4462ae5fbf5cc34c',
+        'reference' => 'b9f3395b332bcc3f4c4db62a3f40c61bb1ff2aee',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -472,7 +472,7 @@
         'laravelabcd/boilerplate-package' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'e97a9d6d9a1e4d83efc4e47c4462ae5fbf5cc34c',
+            'reference' => 'b9f3395b332bcc3f4c4db62a3f40c61bb1ff2aee',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

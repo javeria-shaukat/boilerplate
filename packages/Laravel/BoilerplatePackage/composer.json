@@ -1,7 +1,7 @@
 {
     "name": "laravel/boilerplate-package",
     "description": "This is a simple boilerplate package of laravel",
-    "type": "library",
+    "type": "composer-plugin",
     "authors": [
         {
             "name": "javeriaShuakt",
@@ -10,11 +10,13 @@
     ],
     "require": {
         "php": "^8.2",
+      
+        "composer-plugin-api": "^2.0",
+        "composer/composer": "^2.0", 
         "livewire/livewire": "^3.5",
         "power-components/livewire-powergrid": "^5.10",
         "laravel/breeze": "^2.1",
         "spatie/laravel-permission": "^6.9"
-
     },
     "autoload": {
         "psr-4": {
@@ -26,7 +28,8 @@
             "providers": [
                 "Laravel\\BoilerplatePackage\\BoilerPlateServiceProvider"
             ]
-        }
+        },
+        "class": "Laravel\\BoilerplatePackage\\InstallerPlugin"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
