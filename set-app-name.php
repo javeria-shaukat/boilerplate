@@ -33,7 +33,7 @@ if (file_exists($envPath)) {
     foreach ($envVariables as $key => $value) {
         $envContent = preg_replace(
             '/^' . $key . '=.*$/m',
-            $key . '="' . $value . '"',
+            $key . '=' . $value . '',
             $envContent
         );
     }
